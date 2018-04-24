@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Trivia Quiz"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:id="@+id/welcomeTv"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignLeft="@+id/welcomeProgressBar"
+        android:layout_alignStart="@+id/welcomeProgressBar"
+        android:layout_below="@+id/textView"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:text="@string/welcome_text"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/welcomeProgressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:indeterminateTintMode="src_atop"
+        android:maxWidth="10dp"
+        android:minWidth="10dp"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/highscoreBtn"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/welcomeProgressBar"
+        android:layout_alignStart="@+id/welcomeProgressBar"
+        android:layout_below="@+id/welcomeProgressBar"
+        android:layout_marginTop="42dp"
+        android:text="HighScore"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/exitBtn"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/highscoreBtn"
+        android:layout_alignBottom="@+id/highscoreBtn"
+        android:layout_alignEnd="@+id/welcomeProgressBar"
+        android:layout_alignRight="@+id/welcomeProgressBar"
+        android:background="@color/colorPrimaryDark"
+        android:text="Exit"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
